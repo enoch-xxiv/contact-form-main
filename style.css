@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Karla";
+    src: url("./assets/fonts/Karla-VariableFont_wght.ttf"), format("ttf");
+}
+
+:root {
+    --primary-green-200: hsl(148, 38%, 91%);
+    --primary-green-600: hsl(169, 82%, 27%);
+    --primary-red: hsl(0, 66%, 54%);
+
+    --neutral-grey-500: hsl(186, 15%, 59%);
+    --neutral-grey-900: hsl(187, 24%, 22%);
+    --neutral-white: hsl(0, 0%, 100%);
+
+    font-size: 16px;
+    --main-font: "Karla", sans-serif;
+    --regular-weight: 400;
+    --bold-weight: 700;
+}
+
+body {
+    background-color: var(--primary-green-200);
+}
