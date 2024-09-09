@@ -20,4 +20,9 @@
 
 body {
     background-color: var(--primary-green-200);
+    font-family: var(--main-font);
+}
+
+textarea {
+    resize: none;
 }
