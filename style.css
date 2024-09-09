@@ -25,6 +25,7 @@ body {
 
 textarea {
     resize: none;
+    display: block;
 }
 
 .contact-us-form {
