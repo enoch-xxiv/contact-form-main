@@ -26,3 +26,16 @@ body {
 textarea {
     resize: none;
 }
+
+.contact-us-form {
+    background-color: var(--neutral-white);
+    max-width: fit-content;
+}
+
+.contact-us-form label {
+    display: block;
+}
+
+.contact-us-form section {
+    display: flex;
+}
