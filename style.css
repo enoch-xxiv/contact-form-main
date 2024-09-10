@@ -7,28 +7,32 @@
     --primary-green-200: hsl(148, 38%, 91%);
     --primary-green-600: hsl(169, 82%, 27%);
     --primary-red: hsl(0, 66%, 54%);
-
     --neutral-grey-500: hsl(186, 15%, 59%);
     --neutral-grey-900: hsl(187, 24%, 22%);
     --neutral-white: hsl(0, 0%, 100%);
-
     font-size: 16px;
     --main-font: "Karla", sans-serif;
     --regular-weight: 400;
     --bold-weight: 700;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--primary-green-200);
     font-family: var(--main-font);
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     height: 100vh;
     gap: 1rem;
+}
+
+h1 {
+    margin: 0;
 }
 
 textarea {
@@ -38,23 +42,8 @@ textarea {
 .contact-us-form {
     background-color: var(--neutral-white);
     padding: 2rem;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
+    border-radius: 12px;
     width: max-content;
-}
-
-.contact-us-form section,
-.contact-us-form > input,
-.contact-us-form textarea {
-    margin-bottom: 0.8rem;
-}
-
-.contact-us-form label {
-    margin-bottom: 0.5rem;
-}
-
-.contact-us-form label {
-    display: block;
 }
 
 .contact-us-form section {
@@ -62,20 +51,27 @@ textarea {
     gap: 16px;
 }
 
+/* larger spacing,  */
+
 .contact-us-form h1 {
-    margin-bottom: 1rem;
     font-size: 1.5rem;
     color: var(--neutral-grey-900);
     font-weight: var(--bold-weight);
 }
 
-.contact-us-form input {
+.contact-us-form input:not([type="checkbox"]):not([type="radio"]),
+.contact-us-form textarea {
     border: 1px solid var(--neutral-grey-900);
     border-radius: 8px;
-}
-#first-name,
-#last-name {
     width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: 16px;
+}
+
+.contact-us-form div:has(> input[type="radio"]) {
+    display: flex;
+    gap: 1rem;
+    border: 1px solid var(--neutral-grey-900);
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px;
 }
