@@ -49,11 +49,20 @@ input[type="radio"] {
     padding: 2rem;
     border-radius: 12px;
     width: max-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .contact-us-form section {
     display: flex;
     gap: 16px;
+}
+
+input[id="first-name"],
+input[id="last-name"] {
+    margin-top: 12px;
 }
 
 /* larger spacing,  */
