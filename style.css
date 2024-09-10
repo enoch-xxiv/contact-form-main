@@ -21,16 +21,36 @@
 body {
     background-color: var(--primary-green-200);
     font-family: var(--main-font);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    gap: 1rem;
 }
 
 textarea {
     resize: none;
-    display: block;
 }
 
 .contact-us-form {
     background-color: var(--neutral-white);
-    max-width: fit-content;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: max-content;
+}
+
+.contact-us-form section,
+.contact-us-form > input,
+.contact-us-form textarea {
+    margin-bottom: 0.8rem;
+}
+
+.contact-us-form label {
+    margin-bottom: 0.5rem;
 }
 
 .contact-us-form label {
@@ -39,4 +59,23 @@ textarea {
 
 .contact-us-form section {
     display: flex;
+    gap: 16px;
+}
+
+.contact-us-form h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--neutral-grey-900);
+    font-weight: var(--bold-weight);
+}
+
+.contact-us-form input {
+    border: 1px solid var(--neutral-grey-900);
+    border-radius: 8px;
+}
+#first-name,
+#last-name {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
