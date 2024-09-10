@@ -39,6 +39,11 @@ textarea {
     resize: none;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: var(--primary-green-600);
+}
+
 .contact-us-form {
     background-color: var(--neutral-white);
     padding: 2rem;
@@ -74,4 +79,14 @@ textarea {
     border-radius: 8px;
     width: 100%;
     padding: 12px;
+}
+
+.contact-us-form > button {
+    background-color: var(--primary-green-600);
+    color: var(--neutral-white);
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    letter-spacing: 1px;
 }
