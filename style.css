@@ -49,20 +49,23 @@ input[type="radio"] {
     padding: 2rem;
     border-radius: 12px;
     width: max-content;
-
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
 
 .contact-us-form section {
     display: flex;
     gap: 16px;
+    margin-bottom: 12px;
 }
 
-input[id="first-name"],
-input[id="last-name"] {
-    margin-top: 12px;
+.contact-us-form > label,
+.contact-us-form > section:first-of-type > div > label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.contact-us-form input:not([type="radio"]):not([type="checkbox"]),
+.contact-us-form textarea {
+    margin-bottom: 12px;
 }
 
 /* larger spacing,  */
@@ -71,6 +74,12 @@ input[id="last-name"] {
     font-size: 1.5rem;
     color: var(--neutral-grey-900);
     font-weight: var(--bold-weight);
+    margin-bottom: 16px;
+}
+
+input[id="first-name"],
+input[id="last-name"] {
+    margin-bottom: 0;
 }
 
 .contact-us-form input:not([type="checkbox"]):not([type="radio"]),
